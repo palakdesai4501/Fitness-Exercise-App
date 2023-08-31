@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 
 const SearchExercises = () => {
+  const [search, setSearch] = useState('')
   return (
     <Stack
       alignItems="center"
@@ -24,8 +25,8 @@ const SearchExercises = () => {
             borderRadius: '40px'
           }}
           height="76px"
-          value=""
-          onChange={(e) => { }}
+          value={search}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search Exercises"
           type="text"
         />
