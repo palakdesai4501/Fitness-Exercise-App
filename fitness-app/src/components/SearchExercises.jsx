@@ -1,8 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Button, Stack, TextField, Typography } from '@mui/material'
+import { Box, Button, Stack, TextField, Typography } from '@mui/material';
+import { exerciseOptions, fetchData } from '../utils/fetchData';
 
 const SearchExercises = () => {
   const [search, setSearch] = useState('')
+
+  const handleSearch = async () => {
+    if (search) {
+      const exercisesData = await fetchData
+        ('https://exercisedb.p.rapidapi.com/exercises',
+          exerciseOptions);
+
+      const searchedExercises = exercisesData.filter(
+        (exercise) => exercise.name.toLowerCase().includes(search)
+          || exercise.target.toLowerCase().includes(search)
+          || exercise.equipment.toLowerCase().includes(search)
+          || exercise.bodyPart.toLowerCase().includes(search))
+    }
+  }
   return (
     <Stack
       alignItems="center"
@@ -36,12 +51,13 @@ const SearchExercises = () => {
             bgcolor: '#FF2625',
             color: '#fff',
             textTransform: 'none',
-            width: { lg: '175px', xs: '12px'},
-            fontSize: { lg: '20px', xs: '14px'},
+            width: { lg: '175px', xs: '12px' },
+            fontSize: { lg: '20px', xs: '14px' },
             height: '56px',
             position: 'absolute',
             right: '0' //important for absolute positioning to make it at center
-          }}>
+          }}
+          onClick={handleSearch}>
           Search
         </Button>
       </Box>
