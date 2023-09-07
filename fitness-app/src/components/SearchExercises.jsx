@@ -65,7 +65,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         <Button
           className="search-btn"
           sx={{
-            bgcolor: '#FF2625',
+            bgcolor: '#808080',
             color: '#fff',
             textTransform: 'none',
             width: { lg: '175px', xs: '12px' },
