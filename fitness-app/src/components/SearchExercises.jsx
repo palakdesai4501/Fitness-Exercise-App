@@ -42,7 +42,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       justifyContent="center"
       p="20px">
       <Typography
-        fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px' } }}
+        fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px', color:'#fff' } }}
         mb="50px" textAlign="center">
         Awsome Exercises You <br /> Should Know
       </Typography>
