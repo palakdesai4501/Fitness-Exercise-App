@@ -11,8 +11,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
             justifyContent="center"
             className="bodyPart-card"
             sx={{
-                borderTop: bodyPart === item ? '4px solid #ff2625' : '',
-                backgroundColor: '#fff',
+                borderTop: bodyPart === item ? '4px solid #fff' : '',
+                backgroundColor: '#808080',
                 borderBottomLeftRadius: '20px',
                 width: '270px',
                 height: '280px',
@@ -24,8 +24,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
                 window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
             }}
         >
-            <img src={Icon} alt="dubbell" style={{ width: '40px', height: '40px' }} />
-            <Typography fontSize="24px" fontWeight="bold" color="#3A1212" textTransform="capitalize">{item}</Typography>
+            <img src={Icon} alt="dubbell" style={{ width: '50px', height: '50px' }} />
+            <Typography fontSize="24px" fontWeight="bold" color="#fff" textTransform="capitalize">{item}</Typography>
         </Stack>
     )
 }
