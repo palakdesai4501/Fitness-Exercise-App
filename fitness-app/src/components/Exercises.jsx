@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import { Box, Stack, Typography } from '@mui/material';
-
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
+
+
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
@@ -56,7 +57,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       <Stack mt="100px" alignItems="center">
         {exercises.length > 9 && (
           <Pagination 
-          color="standard" 
+          color='standard'
           shape="rounded"
           defaultPage={1}
           count={Math.ceil(exercises.length / exercisesPerPage)}
