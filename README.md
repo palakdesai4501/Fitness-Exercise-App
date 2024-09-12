@@ -19,7 +19,7 @@ This project is built using React.js and Material UI, providing a responsive and
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/fitness-exercise-app.git
+    git clone https://github.com/palakdesai4501/Fitness-Exercise-App.git
     cd fitness-exercise-app
     ```
 
