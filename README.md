@@ -1,12 +1,12 @@
 # Fitness Exercise App
 
 ## Description
-The Fitness Exercise App is a web application designed to model aspects of a healthy and fit lifestyle. It allows users to browse various exercises, view instructional videos, and find similar exercises. Real-time data retrieval from the Rapid API ensures users have access to a wide variety of current and varied workout routines. 
+The Fitness Exercise App is a web application designed to model aspects of a healthy and fit lifestyle. It allows users to browse various exercises, view instructional videos, and find similar exercises. Real-time data retrieval from the Rapid API ensures users have access to a wide variety of current and varied workout routines.
 
 This project is built using React.js and Material UI, providing a responsive and user-friendly interface.
 
 ## Features
-- **Search Exercises:** Allows users to search for exercises based on the body part, target muscle, or equipment used.
+- **Search Exercises:** Allows users to search for exercises based on body part, target muscle, or equipment used.
 - **Exercise Details:** Provides detailed information about selected exercises, including instructional videos from YouTube.
 - **Similar Exercises:** Recommends exercises that target the same body part or use similar equipment.
 - **Responsive Design:** Built with Material UI, ensuring that the app looks great on all devices.
@@ -50,56 +50,7 @@ Key API endpoints used:
 - **Exercise Data:** Fetches exercise information based on body part, muscle target, and equipment used.
 - **YouTube Integration:** Fetches YouTube videos related to exercises to help users perform exercises correctly.
 
-## Components
-
-### BodyPart.jsx
-Allows users to select body parts and filter exercises accordingly.
-
-### Detail.jsx
-Displays detailed information about the selected exercise.
-
-### ExerciseCard.jsx
-Renders individual exercise cards in the exercise list.
-
-### Exercises.jsx
-Displays a list of exercises based on user-selected filters.
-
-### ExerciseVideos.jsx
-Fetches and displays related YouTube videos for the selected exercise.
-
-### Footer.jsx
-The footer component for the app.
-
-### HeroBanner.jsx
-Displays the banner on the homepage, providing a welcoming and engaging entry to the app.
-
-### HorizontalScrollbar.jsx
-Used to scroll through the list of body parts for filtering exercises.
-
-### Loader.jsx
-Displays a loading spinner when fetching data from the API.
-
-### Navbar.jsx
-Navigation bar for the app.
-
-### SearchExercises.jsx
-Search bar component to find exercises based on user input.
-
-### SimilarExercises.jsx
-Displays exercises similar to the currently selected exercise.
-
-### ExerciseDetail.jsx
-A combination of details, videos, and similar exercises for the selected exercise.
-
-### Home.jsx
-The main page that users land on when they open the app.
-
-### fetchData.js
-Contains functions to fetch data from the Rapid API for exercises and YouTube videos.
-
 ## Future Enhancements
 - Add user authentication to track progress and create personalized workout routines.
 - Allow users to create and save custom exercise routines.
 - Implement a nutrition module to complement the exercise routines with diet recommendations.
-
-
