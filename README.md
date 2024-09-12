@@ -102,6 +102,4 @@ Contains functions to fetch data from the Rapid API for exercises and YouTube vi
 - Allow users to create and save custom exercise routines.
 - Implement a nutrition module to complement the exercise routines with diet recommendations.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
